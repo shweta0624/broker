@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link href="./build/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="./build/css/color.css" rel="stylesheet">
+  
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        
+      </ul>
+
+      <!-- SEARCH FORM -->
+      
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <div class="image">
+              <img style="width: 38px; height: 38px;" src="dist/img/user2-160x160.jpg" class="img-circle elevation-2"
+                alt="User Image">
+              <label>Alexander Pierce</label>
+
+            </div>
+          </a>
+          <div class="dropdown-menu  dropdown-menu-right">
+
+            <a class="dropdown-item" href="./pages/examples/brokerprofile.html">
+              <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+              Profile
+            </a>
+            <a class="dropdown-item" href="./pages/examples/recover-password.html">
+              <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+              Change Password
+            </a>
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+              Logout
+            </a>
+
+
+          </div>
+         
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <img style="width:230px; height:60px; background-color: white;" src="./pages/images/Foogi_Logo.png">
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar" style="padding: 0px 0px; height: 100%; width: 100%; line-height: 10px;">
+        <!-- Sidebar user panel (optional) -->
+        <!--<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>-->
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="brokerindex.html" class="nav-link active" >
+                <i class="ionicons ion-speedometer"></i>
+                <p>
+                 Service
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/examples/calender.html" class="nav-link">
+                <i class="ionicons ion-android-calendar"></i>
+                <p>
+                  Your Calendar
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/examples/upload.html" class="nav-link">
+                <i class="ionicons ion-information-circled"></i>
+                <p>
+                  Upload Prescription
+                </p>
+              </a>
+            </li>
+           
+            <li class="nav-item">
+              <a href="./pages/examples/ordercomplt.html" class="nav-link">
+                <i class="ionicons ion-android-checkbox-outline"></i>
+                <p>
+                  Order Complete
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./pages/examples/Listvendor.html" class="nav-link">
+                <i class="ionicons ion-ios-list-outline"></i>
+                <p>
+                List of All Vendors
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./pages/examples/Details.html" class="nav-link">
+                <i class="ionicons ion-android-pin"></i>
+                <p>
+                  Track Order
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./pages/examples/addstaf.html" class="nav-link">
+                <i class="ionicons ion-person-stalker"></i>
+                <p>
+                  Add Staff Details
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="ionicons ion-ios-cloud-upload"></i>
+                <p>
+                  Profile
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+            
+                <li class="nav-item">
+                  <a href="./pages/examples/brokerprofile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>About Us</p>
+                  </a>
+                </li>
+            
+                <li class="nav-item">
+                  <a href="./pages/examples/service.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Services</p>
+                  </a>
+                </li>
+            
+                <li class="nav-item">
+                  <a href="./pages/examples/Premisesdetail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Premises Details</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="./pages/examples/contact-us.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contact us</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="ionicons ion-help-circled"></i>
+                <p>Support</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/examples/faqbroker.html" class="nav-link">
+                <i class="ionicons ion-help-circled"></i>
+                <p>FAQ</p>
+              </a>
+            </li>
+
+                
+                <li class="nav-item">
+                  <a href="./pages/examples/renewacc.html" class="nav-link">
+                    <i class="ionicons ion-help-circled"></i>
+                    <p>Renew Your Account</p>
+                  </a>
+                </li>
+
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Dashboard v1</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <!-- Small boxes (Stat box) -->
+        <div class="row">
+        
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                      Total Customers</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">40,000</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-users fa-2x text-gray-300"></i>
+                   
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-auto">
+                <a href="./pages/brokertablepage/tbdata1.html">
+                  <p class="text-primary">View More<b> ></b></p></a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                      Total Collection</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <a href="./pages/brokertablepage/tbdata2.html">
+                  <p class="text-success"> View More<b> ></b></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Revenue
+                    </div>
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-auto">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <a href="./pages/brokertablepage/tbdata3.html">
+                  <p class="text-info">View More<b> ></b></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Pending Requests Card Example -->
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Reviews
+                    </div>
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-auto">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">80%</div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-star fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <a href="./pages/brokertablepage/tbdata4.html">
+                  <p class="text-primary"> View More<b> ></b></p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Pending Requests Card Example -->
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Next Renewal Date
+                    </div>
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-auto">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-calendar-alt fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto ">
+                <a href="./pages/brokertablepage/tbdata5.html">
+                  <p class="text-success">View More<b> ></b></p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Pending Requests Card Example -->
+          <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Reports
+                    </div>
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-auto">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                     
+                    <i class="fas fa-ballot-check fa-2x text-gray-300"></i>
+                    <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto ">
+                <a href="./pages/brokertablepage/tbdata6.html">
+                  <p class="text-info">View More<b> ></b></p>
+                </a>
+              </div>
+            </div>
+          </div>
+         
+          <!-- /.row -->
+          <!-- Main row -->
+          <div class="card-body">
+            <h3>Upcoming Appointment</h3>
+            <table  class="table table-bordered table-striped table-responsive-sm col-12" style="margin-top: 10px;">
+              <thead>
+                <tr>
+                  <th>Sr No</th>
+                  <th>col 1</th>
+                  <th>col 2</th>
+                  <th>col 3</th>
+                  <th>col 4</th>
+                  <th>col 5</th>
+                  <th>col 6</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  <td> - </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+            <nav aria-label="..." class="offset-md-9">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item " aria-current="page">
+                  <a class="page-link" href="#">2 <span class="visually-hidden"></span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+      
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <textarea id="inputMessage" placeholder="Put all the emails seperated by commas" class="form-control"
+                rows="4"></textarea>
+            </div>
+            <div class="modal-footer">
+      
+              <button type="button" class="btn btn-primary">Invite</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer style="text-align: center;" class="main-footer">
+      <strong>Copyright &copy; 2020-2022 </strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+  <script>
+    $("#table1").click(function () {
+      $("#txt").toggle();
+
+    });
+  </script>
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard.js"></script>
+</body>
+
+</html>
